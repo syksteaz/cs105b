@@ -1,0 +1,54 @@
+\documentclass[leqno]{article}
+\usepackage{fancyhdr, framed, listings, graphicx, amsmath, ulem, caption, amsthm, tabu, tikz, enumitem, lipsum, listings, hyperref, lastpage, tabularx, fontenc, centernot, mathtools, pgfgantt, multirow, cancel}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[margin=1in]{geometry}
+
+\def\ojoin{\setbox0=\hbox{$\bowtie$}%
+  \rule[-.02ex]{.25em}{.4pt}\llap{\rule[\ht0]{.25em}{.4pt}}}
+\def\leftouterjoin{\mathbin{\ojoin\mkern-5.8mu\bowtie}}
+\def\rightouterjoin{\mathbin{\bowtie\mkern-5.8mu\ojoin}}
+\def\fullouterjoin{\mathbin{\ojoin\mkern-5.8mu\bowtie\mkern-5.8mu\ojoin}}
+
+\newcommand{\semijoin}{\ltimes}
+\newcommand{\rightsemijoin}{\rtimes}
+\newcommand{\antisemijoin}{\overline{\ltimes}}
+
+\pagestyle{fancy}
+\newcommand{\lastpage}{\pageref{LastPage}}
+
+\def\ojoin{\setbox0=\hbox{$\bowtie$}%
+  \rule[-.02ex]{.25em}{.4pt}\llap{\rule[\ht0]{.25em}{.4pt}}}
+\def\leftouterjoin{\mathbin{\ojoin\mkern-5.8mu\bowtie}}
+\def\rightouterjoin{\mathbin{\bowtie\mkern-5.8mu\ojoin}}
+\def\fullouterjoin{\mathbin{\ojoin\mkern-5.8mu\bowtie\mkern-5.8mu\ojoin}}
+
+\newcommand{\studentName}{Eden Zik}
+\newcommand{\courseNumber}{CS29a}
+\newcommand{\courseTitle}{Discrete Structures}
+
+
+\newcommand{\assignmentType}{Problem Set}
+\newcommand{\assignmentNum}{1}
+\newcommand{\assignmentTitle}{\assignmentType \ \assignmentNum}
+\newcommand{\assignmentDueDate}{9/15/14}
+
+\renewcommand{\and}{\wedge}
+\newcommand{\nott}{\neg}
+\newcommand{\imply}{\rightarrow}
+\newcommand{\orr}{\vee}
+
+\newcommand{\njoin}{\bowtie}
+
+\lhead{\studentName}
+\chead{\courseNumber\ - \courseTitle}
+\rhead{\today}
+
+\lfoot{\assignmentTitle}
+\cfoot{Page \thepage/\lastpage}
+\rfoot{Due \assignmentDueDate}
+
+\newtheorem{theorem}{Theorem}
+
+\newtheorem{definition}{Definition}
